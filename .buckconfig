@@ -12,6 +12,3 @@
 
 [buildfile]
   includes = //DEFS
-
-[build]
-  threads = 16
