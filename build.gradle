@@ -32,6 +32,10 @@ allprojects {
             url "$androidHome/extras/google/m2repository/"
         }
     }
+
+    tasks.withType(com.android.build.gradle.internal.tasks.ValidateSigningTask) {
+      outputs.file { storeLocation }
+    }
 }
 
 subprojects { project ->
