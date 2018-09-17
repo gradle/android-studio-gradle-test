@@ -103,3 +103,38 @@ rebuildAllVariants {
 help {
   tasks = ["help"]
 }
+
+dexingDefaults {
+    versions = ["5.0-20180912002106+0000"]
+    tasks = ["assembleDebug"]
+    gradle-args = ["--parallel", "-Dcom.android.build.gradle.overrideVersionCheck=true"]
+    warm-ups = 1
+    run-using = tooling-api
+    cleanup-tasks = ["clean"]
+}
+
+dexingTransform = ${dexingDefaults}
+dexingTransform = {
+    gradle-args = ${dexingDefaults.gradle-args}
+    gradle-args += "-Pandroid.enableDexingArtifactTransform=true"
+}
+
+dexingTask = ${dexingDefaults}
+dexingTask = {
+    gradle-args = ${dexingDefaults.gradle-args}
+    gradle-args += "-Pandroid.enableDexingArtifactTransform=false"
+}
+
+dexingTransformCleanCache = ${dexingTransform}
+dexingTransformCleanCache = {
+    gradle-args = ${dexingTransform.gradle-args}
+    gradle-args += "-Pandroid.enableBuildCache=false"
+    clear-transform-cache-before = BUILD
+}
+
+dexingTaskCleanCache = ${dexingTask}
+dexingTaskCleanCache = {
+    gradle-args = ${dexingTask.gradle-args}
+    gradle-args += "-Pandroid.enableBuildCache=false"
+    clear-transform-cache-before = BUILD
+}
