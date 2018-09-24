@@ -9,7 +9,7 @@ def versions = [
 ]
 
 def buildConfig = [
-        compileSdkVersion: 25,
+        compileSdkVersion: 26,
         minSdkVersion    : 21,
         targetSdkVersion : 25,
         buildToolsVersion: '28.0.2',

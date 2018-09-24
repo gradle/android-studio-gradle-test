@@ -8,7 +8,7 @@ abiChange {
 
 abiChangeWithInstantRun {
   tasks = [":phthalic:assembleDebug"]
-  apply-abi-change-to = "outissue/carnally/src/main/java/com/studio/carnally/Thing.java"
+  apply-abi-change-to = "outissue/carnally/src/main/java/com/studio/carnally/LoginActivity.java"
   gradle-args = [
     "-Pandroid.injected.invoked.from.ide=true",
     "-Pandroid.injected.build.api=25",
@@ -20,12 +20,126 @@ abiChangeWithInstantRun {
   ]
 }
 
+abiChangeWithManyFiles {
+  tasks = [":phthalic:assembleDebug"]
+
+  apply-abi-change-to = "Padraig/ratafee/src/main/java/com/studio/ratafee/LoginActivity.java"
+  apply-abi-change-to = "Padraig/quaestor/triduum/src/main/java/com/studio/triduum/LoginActivity.java"
+  apply-abi-change-to = "Padraig/paegle/src/main/java/com/studio/paegle/LoginActivity.java"
+  apply-abi-change-to = "Padraig/endocoele/src/main/java/com/studio/endocoele/LoginActivity.java"
+  apply-abi-change-to = "Padraig/cuminoin/src/main/java/com/studio/cuminoin/LoginActivity.java"
+  apply-abi-change-to = "Padraig/signist/src/main/java/com/studio/signist/LoginActivity.java"
+  apply-abi-change-to = "Padraig/decollete/src/main/java/com/studio/decollete/LoginActivity.java"
+  apply-abi-change-to = "Padraig/follicle/src/main/java/com/studio/follicle/LoginActivity.java"
+  apply-abi-change-to = "Padraig/limitary/src/main/java/com/studio/limitary/LoginActivity.java"
+  apply-abi-change-to = "Padraig/emerse/src/main/java/com/studio/emerse/LoginActivity.java"
+  apply-abi-change-to = "Padraig/arbitrate/src/main/java/com/studio/arbitrate/LoginActivity.java"
+  apply-abi-change-to = "Tripoline/src/main/java/com/studio/Tripoline/LoginActivity.java"
+  apply-abi-change-to = "harvestry/suchness/src/main/java/com/studio/suchness/LoginActivity.java"
+  apply-abi-change-to = "harvestry/Bokhara/src/main/java/com/studio/Bokhara/LoginActivity.java"
+  apply-abi-change-to = "harvestry/Timbira/src/main/java/com/studio/Timbira/LoginActivity.java"
+  apply-abi-change-to = "harvestry/digallate/src/main/java/com/studio/digallate/LoginActivity.java"
+  apply-abi-change-to = "harvestry/thribble/src/main/java/com/studio/thribble/LoginActivity.java"
+  apply-abi-change-to = "harvestry/Savannah/penumbra/src/main/java/com/studio/penumbra/LoginActivity.java"
+  apply-abi-change-to = "harvestry/unwormy/src/main/java/com/studio/unwormy/LoginActivity.java"
+  apply-abi-change-to = "harvestry/eelgrass/src/main/java/com/studio/eelgrass/LoginActivity.java"
+  apply-abi-change-to = "harvestry/isocryme/src/main/java/com/studio/isocryme/LoginActivity.java"
+  apply-abi-change-to = "phthalic/src/main/java/com/studio/phthalic/LoginActivity.java"
+  apply-abi-change-to = "gradle/SourceTemplate/app/src/androidTest/java/gradle/example/ExampleInstrumentedTest.java"
+  apply-abi-change-to = "gradle/SourceTemplate/app/src/main/java/gradle/example/LoginActivity.java"
+  apply-abi-change-to = "outissue/situla/src/main/java/com/studio/situla/LoginActivity.java"
+  apply-abi-change-to = "outissue/nonparty/src/main/java/com/studio/nonparty/LoginActivity.java"
+  apply-abi-change-to = "outissue/tetragram/src/main/java/com/studio/tetragram/LoginActivity.java"
+  apply-abi-change-to = "outissue/caricetum/midship/src/main/java/com/studio/midship/LoginActivity.java"
+  apply-abi-change-to = "outissue/caricetum/scientist/src/main/java/com/studio/scientist/LoginActivity.java"
+  apply-abi-change-to = "outissue/caricetum/skiapod/src/main/java/com/studio/skiapod/LoginActivity.java"
+  apply-abi-change-to = "outissue/synarchy/src/main/java/com/studio/synarchy/LoginActivity.java"
+  apply-abi-change-to = "outissue/oleometer/src/main/java/com/studio/oleometer/LoginActivity.java"
+  apply-abi-change-to = "outissue/embrace/src/main/java/com/studio/embrace/LoginActivity.java"
+  apply-abi-change-to = "outissue/nutate/src/main/java/com/studio/nutate/LoginActivity.java"
+  apply-abi-change-to = "outissue/worldway/src/main/java/com/studio/worldway/LoginActivity.java"
+  apply-abi-change-to = "outissue/eyesore/src/main/java/com/studio/eyesore/LoginActivity.java"
+  apply-abi-change-to = "outissue/airified/src/main/java/com/studio/airified/LoginActivity.java"
+  apply-abi-change-to = "outissue/bracciale/src/main/java/com/studio/bracciale/LoginActivity.java"
+  apply-abi-change-to = "outissue/coherence/src/main/java/com/studio/coherence/LoginActivity.java"
+  apply-abi-change-to = "outissue/gliadin/src/main/java/com/studio/gliadin/LoginActivity.java"
+  apply-abi-change-to = "outissue/nursing/src/main/java/com/studio/nursing/LoginActivity.java"
+  apply-abi-change-to = "outissue/caudate/src/main/java/com/studio/caudate/LoginActivity.java"
+  apply-abi-change-to = "outissue/Glumaceae/src/main/java/com/studio/Glumaceae/LoginActivity.java"
+  apply-abi-change-to = "outissue/carnally/src/main/java/com/studio/carnally/LoginActivity.java"
+  apply-abi-change-to = "outissue/nonunion/src/main/java/com/studio/nonunion/LoginActivity.java"
+  apply-abi-change-to = "outissue/aricine/src/main/java/com/studio/aricine/LoginActivity.java"
+  apply-abi-change-to = "outissue/extended/src/main/java/com/studio/extended/LoginActivity.java"
+  apply-abi-change-to = "outissue/defusion/src/main/java/com/studio/defusion/LoginActivity.java"
+  apply-abi-change-to = "outissue/shortsome/src/main/java/com/studio/shortsome/LoginActivity.java"
+  apply-abi-change-to = "outissue/cyclus/src/main/java/com/studio/cyclus/LoginActivity.java"
+  apply-abi-change-to = "outissue/phasmatid/src/main/java/com/studio/phasmatid/LoginActivity.java"
+  apply-abi-change-to = "outissue/nonjurant/src/main/java/com/studio/nonjurant/LoginActivity.java"
+  apply-abi-change-to = "outissue/browntail/src/main/java/com/studio/browntail/LoginActivity.java"
+  apply-abi-change-to = "fratry/crapple/src/main/java/com/studio/crapple/LoginActivity.java"
+  apply-abi-change-to = "fratry/passbook/src/main/java/com/studio/passbook/LoginActivity.java"
+  apply-abi-change-to = "fratry/assumpsit/src/main/java/com/studio/assumpsit/LoginActivity.java"
+  apply-abi-change-to = "fratry/cepaceous/src/main/java/com/studio/cepaceous/LoginActivity.java"
+  apply-abi-change-to = "fratry/crippling/src/main/java/com/studio/crippling/LoginActivity.java"
+  apply-abi-change-to = "fratry/Krapina/src/main/java/com/studio/Krapina/LoginActivity.java"
+  apply-abi-change-to = "fratry/Cosmati/src/main/java/com/studio/Cosmati/LoginActivity.java"
+  apply-abi-change-to = "fratry/tentlet/src/main/java/com/studio/tentlet/LoginActivity.java"
+  apply-abi-change-to = "fratry/psoriasis/src/main/java/com/studio/psoriasis/LoginActivity.java"
+  apply-abi-change-to = "fratry/matchy/src/main/java/com/studio/matchy/LoginActivity.java"
+  apply-abi-change-to = "fratry/wiredraw/src/main/java/com/studio/wiredraw/LoginActivity.java"
+  apply-abi-change-to = "fratry/crankum/src/main/java/com/studio/crankum/LoginActivity.java"
+  apply-abi-change-to = "fratry/fortunate/src/main/java/com/studio/fortunate/LoginActivity.java"
+  apply-abi-change-to = "fratry/savory/src/main/java/com/studio/savory/LoginActivity.java"
+  apply-abi-change-to = "fratry/halsen/src/main/java/com/studio/halsen/LoginActivity.java"
+  apply-abi-change-to = "fratry/asteep/src/main/java/com/studio/asteep/LoginActivity.java"
+  apply-abi-change-to = "fratry/Ormond/src/main/java/com/studio/Ormond/LoginActivity.java"
+  apply-abi-change-to = "fratry/sodden/src/main/java/com/studio/sodden/LoginActivity.java"
+  apply-abi-change-to = "fratry/linotype/src/main/java/com/studio/linotype/LoginActivity.java"
+  apply-abi-change-to = "fratry/subradius/src/main/java/com/studio/subradius/LoginActivity.java"
+  apply-abi-change-to = "fratry/audience/src/main/java/com/studio/audience/LoginActivity.java"
+  apply-abi-change-to = "fratry/endothys/src/main/java/com/studio/endothys/LoginActivity.java"
+  apply-abi-change-to = "preprice/src/main/java/com/studio/preprice/LoginActivity.java"
+  apply-abi-change-to = "subvola/ocracy/src/main/java/com/studio/ocracy/LoginActivity.java"
+  apply-abi-change-to = "subvola/zelator/src/main/java/com/studio/zelator/LoginActivity.java"
+  apply-abi-change-to = "subvola/atbash/src/main/java/com/studio/atbash/LoginActivity.java"
+  apply-abi-change-to = "subvola/absconsa/src/main/java/com/studio/absconsa/LoginActivity.java"
+  apply-abi-change-to = "subvola/wordsmith/src/main/java/com/studio/wordsmith/LoginActivity.java"
+  apply-abi-change-to = "subvola/Leporis/src/main/java/com/studio/Leporis/LoginActivity.java"
+  apply-abi-change-to = "subvola/copsewood/src/main/java/com/studio/copsewood/LoginActivity.java"
+  apply-abi-change-to = "subvola/tourer/src/main/java/com/studio/tourer/LoginActivity.java"
+  apply-abi-change-to = "subvola/transpire/src/main/java/com/studio/transpire/LoginActivity.java"
+  apply-abi-change-to = "subvola/emergency/src/main/java/com/studio/emergency/LoginActivity.java"
+  apply-abi-change-to = "subvola/haploidic/src/main/java/com/studio/haploidic/LoginActivity.java"
+  apply-abi-change-to = "subvola/papistry/src/main/java/com/studio/papistry/LoginActivity.java"
+  apply-abi-change-to = "subvola/remigrate/src/main/java/com/studio/remigrate/LoginActivity.java"
+  apply-abi-change-to = "subvola/suborder/src/main/java/com/studio/suborder/LoginActivity.java"
+  apply-abi-change-to = "subvola/zealotic/src/main/java/com/studio/zealotic/LoginActivity.java"
+  apply-abi-change-to = "subvola/unmilked/src/main/java/com/studio/unmilked/LoginActivity.java"
+  apply-abi-change-to = "subvola/liming/src/main/java/com/studio/liming/LoginActivity.java"
+  apply-abi-change-to = "subvola/Dipnoi/src/main/java/com/studio/Dipnoi/LoginActivity.java"
+  apply-abi-change-to = "subvola/inhumanly/src/main/java/com/studio/inhumanly/LoginActivity.java"
+  apply-abi-change-to = "subvola/doored/src/main/java/com/studio/doored/LoginActivity.java"
+  apply-abi-change-to = "subvola/cleithral/src/main/java/com/studio/cleithral/LoginActivity.java"
+  apply-abi-change-to = "subvola/graphite/src/main/java/com/studio/graphite/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/teerer/revalenta/src/main/java/com/studio/revalenta/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/teerer/polytonal/src/main/java/com/studio/polytonal/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/teerer/perscribe/src/main/java/com/studio/perscribe/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/teerer/Cuphea/src/main/java/com/studio/Cuphea/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/teerer/Onondaga/src/main/java/com/studio/Onondaga/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/teerer/lucrific/src/main/java/com/studio/lucrific/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/metanilic/agaric/src/main/java/com/studio/agaric/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/Chordata/src/main/java/com/studio/Chordata/LoginActivity.java"
+  apply-abi-change-to = "subvola/gorgoneum/unwincing/src/main/java/com/studio/unwincing/LoginActivity.java"
+  apply-abi-change-to = "subvola/Brittany/src/main/java/com/studio/Brittany/LoginActivity.java"
+  apply-abi-change-to = "subvola/aluminize/src/main/java/com/studio/aluminize/LoginActivity.java"
+}
+
 nonAbiChange {
   tasks = [":phthalic:assembleDebug"]
+  apply-non-abi-change-to = "outissue/carnally/src/main/java/com/studio/carnally/Thing.java"
   buck {
     targets = ["//phthalic:bin_debug"]
   }
-  apply-non-abi-change-to = "outissue/carnally/src/main/java/com/studio/carnally/Thing.java"
 }
 
 nonAbiChangeWithInstantRun {
@@ -66,6 +180,13 @@ androidResourceValueChange {
   apply-android-resource-value-change-to = "./outissue/carnally/src/main/res/values/strings.xml"
 }
 
+# 3.2+ createMockableJar
+# <3.2 mockableAndroidJar
+generateSources {
+  cleanup-tasks = ["clean"]
+  tasks = ["generateDebugSources", "generateDebugAndroidTestSources", "createMockableJar"]
+}
+
 classpathResourceChange {
   tasks = [":phthalic:assembleDebug"]
   buck {
@@ -84,6 +205,14 @@ upToDateSingleVariant {
 rebuildSingleVariant {
   cleanup-tasks = ["clean"]
   tasks = [":phthalic:assembleDebug"]
+}
+
+rebuildSingleVariantWithCache {
+  cleanup-tasks = ["clean"]
+  tasks = [":phthalic:assembleDebug"]
+  gradle-args = [
+    "--build-cache"
+  ]
 }
 
 upToDateAllVariants {
