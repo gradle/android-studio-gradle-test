@@ -1,6 +1,6 @@
 apply plugin: 'java-library'
 dependencies {
     api deps.other.crittercism
-    compileOnly deps.apt.autoValue
+    annotationProcessor deps.apt.autoValue
     compileOnly deps.apt.autoValueAnnotations
 }

@@ -9,7 +9,7 @@ dependencies {
     api project (':outissue:caricetum:concher')
 
     compileOnly deps.support.annotations
-    compileOnly deps.apt.autoService
+    annotationProcessor deps.apt.autoService
     compileOnly deps.apt.androidApi
 
     testImplementation deps.test.compileTesting

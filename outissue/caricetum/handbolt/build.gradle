@@ -3,7 +3,7 @@ dependencies {
     api project (':outissue:caricetum:claypan')
 
     compileOnly deps.support.annotations
-    compileOnly deps.apt.autoService
+    annotationProcessor deps.apt.autoService
     compileOnly deps.apt.androidApi
 
     testImplementation deps.support.annotations
