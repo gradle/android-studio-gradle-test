@@ -1,6 +1,6 @@
 def versions = [
         androidToolsVersion: '25.3.0',
-        daggerVersion      : '2.8',
+        daggerVersion      : '2.16',
         leakCanaryVersion  : '1.5',
         playServicesVersion: '10.0.1',
         roasterVersion     : '2.18.7.Final',
@@ -9,7 +9,7 @@ def versions = [
 ]
 
 def buildConfig = [
-        compileSdkVersion: 25,
+        compileSdkVersion: 26,
         minSdkVersion    : 21,
         targetSdkVersion : 25,
         buildToolsVersion: '28.0.2',
@@ -150,7 +150,7 @@ def other = [
         calligraphy          : 'uk.co.chrisjenx:calligraphy:2.2.0',
         dagger               : "com.google.dagger:dagger:${versions.daggerVersion}",
         gson                 : 'com.google.code.gson:gson:2.6.2',
-        guava                : 'com.google.guava:guava:19.0',
+        guava                : 'com.google.guava:guava:25.1-android',
         picasso              : 'com.squareup.picasso:picasso:2.5.2',
         timber               : 'com.jakewharton.timber:timber:4.1.2',
         roasterApi           : "org.jboss.forge.roaster:roaster-api:${versions.roasterVersion}",
