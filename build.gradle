@@ -53,10 +53,8 @@ subprojects { project ->
             if (it.name.contains("Test")) {
                 resolutionStrategy {
 					force 'io.reactivex:rxjava:1.1.8'
-                    // Not in externally edited version
                     force 'com.squareup.okio:okio:1.8.0'
                     force 'io.reactivex:rxandroid:1.2.1'
-                    // Not in externally edited version
                     force 'com.google.auto:auto-common:0.6'
                     force 'com.android.support:appcompat-v7:25.1.0'
                     force 'com.android.support:recyclerview-v7:25.1.0'
@@ -66,7 +64,6 @@ subprojects { project ->
             }
             resolutionStrategy {
                 force 'com.google.guava:guava:25.1-android'
-                // Not in externally edited version
                 force 'com.google.auto:auto-common:0.6'
                 force 'io.reactivex:rxandroid:1.2.1'
             }
@@ -83,9 +80,7 @@ subprojects { project ->
             project.android{
                 defaultConfig {
                     multiDexEnabled true
-                    // Not in externally edited version
                     versionCode 1
-                    // Not in externally edited version
                     versionName "1.0.0"
                 }
                 signingConfigs {
@@ -116,7 +111,6 @@ def addCommonConfigurationForJavaModules(Project project) {
 
 def addCommonConfigurationForAndroidModules(Project project) {
     project.dependencies {
-        // Not in externally edited version
         api 'com.google.auto.service:auto-service:1.0-rc2'
     }
     project.android {
@@ -183,7 +177,6 @@ task addSources {
                 println "Adding sources to: " + sourceFolder
                 copy {
                     from fileTree(new File(project.rootDir, "gradle/SourceTemplate/app/src/")).exclude("main/AndroidManifest.xml")
-                    // Not in externally edited version
                     from fileTree(new File(project.rootDir, "gradle/SourceTemplate/java-lib/src/"))
                     into sourceFolder
                 }
@@ -196,15 +189,12 @@ task addSources {
                 }
 
                 adjustPackage(it, "LoginActivity")
-                // Not in externally edited version
                 addReferencesToOtherClasses(it, "LoginActivity")
-                // Not in externally edited version
                 adjustPackage(it, "Thing")
                 if (hasAutoService) {
                     adjustPackage(it, "Service")
                 }
             }
-            // Not in externally edited version
             if (it.plugins.hasPlugin('java-library')) {
                 def sourceFolder = new File(it.projectDir, 'src')
                 println "Adding sources to: " + sourceFolder
