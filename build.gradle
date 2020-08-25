@@ -158,7 +158,11 @@ def ARCHIVES = [
 ]
 gradle.buildFinished {
     ARCHIVES.each { archive ->
-        "zip -d ${archive} ${ENTRIES_TO_DELETE}".execute().waitFor()
+       if (System.getProperty("os.name")?.toLowercase()?.contains("windows")) {
+           "7z d ${archive} ${ENTRIES_TO_DELETE}".execute().waitFor() 
+       } else {
+           "zip -d ${archive} ${ENTRIES_TO_DELETE}".execute().waitFor()
+       }    
     }
 }
 
