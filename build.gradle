@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0-20190816072945+0000'
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath ('com.uber:okbuck:0.16.3') {
           exclude module: 'gradle'
         }
@@ -159,10 +159,10 @@ def ARCHIVES = [
 gradle.buildFinished {
     ARCHIVES.each { archive ->
        if (System.getProperty("os.name")?.toLowerCase()?.contains("windows")) {
-           "7z d ${archive} ${ENTRIES_TO_DELETE}".execute().waitFor() 
+           "7z d ${archive} ${ENTRIES_TO_DELETE}".execute().waitFor()
        } else {
            "zip -d ${archive} ${ENTRIES_TO_DELETE}".execute().waitFor()
-       }    
+       }
     }
 }
 
